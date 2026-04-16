@@ -1,0 +1,26 @@
+{
+  "name": "@drifted/engine",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/driftless-group/engine#readme",
+  "bugs": {
+    "url": "https://github.com/driftless-group/engine/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/driftless-group/engine.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Scott Ballantyne",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.5"
+  }
+}
