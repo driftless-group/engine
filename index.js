@@ -2,12 +2,15 @@ const path = require('path');
 const renderer = require(path.join(__dirname, 'renderer'));
 
 
-module.exports = function configure(opts={}) { 
-
+function configure(opts={}) { 
   var options = {};
 
+  if (options.verbose == undefined) {
+    options.verbose = false;
+  }
+
   if (options.ext == undefined) {
-    options.ext = 'handlebars';
+    options.ext = 'html';
   }
 
   var appDefaults = {
@@ -33,4 +36,7 @@ module.exports = function configure(opts={}) {
   return function(filename, locals={}, onRender) {
     render.call(this, filename, locals, onRender);
   } 
+
 }
+
+module.exports = configure;

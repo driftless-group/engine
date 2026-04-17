@@ -1,4 +1,3 @@
-
 const path = require('path');
 var Handlebars = require('handlebars');
 const fs = require('fs');
@@ -52,8 +51,6 @@ module.exports = function renderer(options={}) {
 
     var instanceVariables = {};
 
-    //console.log(locals);
-
     // I think that app.locals aren't getting added in.  
     // not sure where to get those from.
     Object.assign(instanceVariables, this.locals, locals);
@@ -89,7 +86,6 @@ module.exports = function renderer(options={}) {
       if (sources[filename] == undefined) {
         if (fs.existsSync(config.view[0])) {
           sources[filename] = fs.readFileSync(config.view[0]).toString();
-
         } else {
           throw new Error('Missing template file. The file views/'+filename+" doesn't exist.")
         }

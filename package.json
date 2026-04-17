@@ -1,6 +1,6 @@
 {
   "name": "@drifted/engine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "homepage": "https://github.com/driftless-group/engine#readme",
   "bugs": {
@@ -21,6 +21,8 @@
     "test": "mocha -w"
   },
   "devDependencies": {
+    "@drifted/assets": "^0.0.33",
+    "@drifted/qa": "^0.0.12",
     "mocha": "^11.7.5"
   }
 }
